@@ -85,4 +85,7 @@
 		<item key="expanded7" value="false"/>
 		<item key="expanded8" value="false"/>
 	</section>
+	<section name="ClasspathContainerSelectionPage">
+		<item key="index" value="0"/>
+	</section>
 </section>

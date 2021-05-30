@@ -2,7 +2,9 @@ package com.shopme.admin.user;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.List;
 
+import org.assertj.core.util.Arrays;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
@@ -37,11 +39,8 @@ public class RoleRepositoryTests {
 				+ "and update order status");
 		Role roleAssistant = new Role("Assistant" , "manage questions and reviews");
 		
-//		repo.saveAll(List.of(roleSalesperson,roleEditor,roleShipper,roleAssistant));
-		repo.save(roleSalesperson);
-		repo.save(roleEditor);
-		repo.save(roleShipper);
-		repo.save(roleAssistant);
+		repo.saveAll(Arrays.asList("roleSalesperson","roleEditor","roleShipper","roleAssistant"));
+		
 	}
 
 }
