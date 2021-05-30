@@ -3839,3 +3839,192 @@ java.lang.InterruptedException
 	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
 	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:33:55.436
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.pwpIsgLf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:33:55.456
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.pwpIsgLf
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:33:55.462
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:33:55.463
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.pwpIsgLf => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:34:51.741
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:34:51.742
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2ce7ec5f[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=548)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:34:51.743
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.018
+!MESSAGE Boot LS startup time from start to initialized: 9270ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.218
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tGgaujdxisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.220
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.220
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.221
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.221
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.222
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.tGgaujdx => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.282
+!MESSAGE classpath=125 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.283
+!MESSAGE buffering callback sts4.classpath.tGgaujdx ShopmeBackEnd false 125
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.284
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.286
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.288
+!MESSAGE buffering callback sts4.classpath.tGgaujdx ShopmeCommon false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.289
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.291
+!MESSAGE classpath=124 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.293
+!MESSAGE buffering callback sts4.classpath.tGgaujdx ShopmeFrontEnd false 124
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.293
+!MESSAGE executing callback sts4.classpath.tGgaujdx 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-05-31 02:35:01.953
+!MESSAGE executing callback sts4.classpath.tGgaujdx SUCCESS [done]
+
+!ENTRY org.eclipse.jface 2 0 2021-05-31 02:40:01.164
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-05-31 02:40:01.164
+!MESSAGE A conflict occurred for COMMAND+SHIFT+C:
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.togglelinecommentcommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72eb8354,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(COMMAND+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@21d9bdf2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 03:41:41.204
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 2588, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 03:41:41.206
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 2588, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 03:41:41.206
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 2588, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 03:43:17.808
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 2631, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 03:43:17.809
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 2631, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 03:43:17.809
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 2631, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 03:43:18.474
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 2631, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:08:56.035
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3687, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:08:56.041
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3687, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:08:56.868
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3687, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:08:59.025
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3688, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:08:59.025
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3688, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:08:59.732
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3689, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:08:59.887
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3689, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:09:00.100
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3689, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:09:04.335
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3689, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:09:04.411
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3689, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:09:23.840
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3720, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:09:23.841
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3720, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:09:24.489
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3721, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:09:24.558
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3721, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:09:24.929
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3721, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:16.608
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3746, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:16.609
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3746, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:17.286
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3746, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:17.700
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3747, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:17.701
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3747, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:18.461
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3748, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:18.798
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3748, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:18.844
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3748, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:21.445
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3747, state before: 10 after: 4
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-05-31 04:13:21.542
+!MESSAGE [Log]	Scanner.scan has not advanced at offset 3747, state before: 10 after: 4
