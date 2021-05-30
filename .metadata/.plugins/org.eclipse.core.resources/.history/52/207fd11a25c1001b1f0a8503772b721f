@@ -18,7 +18,6 @@
 					<img th:src="@{/images/KIANG Bus.png}" width=100px;/>
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topNavbar">
-					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="topNavbar">
 					<ul class="navbar-nav">
