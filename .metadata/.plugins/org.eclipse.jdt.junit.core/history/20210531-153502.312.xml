@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="PasswordEncoderTest.testEncodePassword" project="ShopmeBackEnd" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.shopme.admin.user.PasswordEncoderTest" time="0.475" displayname="PasswordEncoderTest" uniqueid="[engine:junit-jupiter]/[class:com.shopme.admin.user.PasswordEncoderTest]">
-    <testcase name="testEncodePassword" classname="com.shopme.admin.user.PasswordEncoderTest" time="0.475" displayname="testEncodePassword()" uniqueid="[engine:junit-jupiter]/[class:com.shopme.admin.user.PasswordEncoderTest]/[method:testEncodePassword()]"/>
-  </testsuite>
-</testrun>

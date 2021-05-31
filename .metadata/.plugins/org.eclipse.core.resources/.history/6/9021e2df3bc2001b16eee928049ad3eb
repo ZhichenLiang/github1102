@@ -97,7 +97,7 @@ public class UserRepositoryTests {
 	}
 	
 	@Test 
-	public void testCountById() {
+	public void testCoun tById() {
 		Integer id = 1;
 		Long countById= repo.countById(id);
 		
