@@ -3,6 +3,8 @@ package com.shopme.admin.user;
 import java.io.IOException;
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.repository.query.Param;
@@ -29,17 +31,18 @@ public class UserController {
 	
 	@GetMapping("/users")
 	public String listFirstPage(Model model) {
-		return listByPage(1, model, "firstName", "asc");
+		return listByPage(1, model, "firstName", "asc", null);
 	}
 	
 	@GetMapping("/users/page/{pageNum}")
 	public String listByPage(@PathVariable(name="pageNum") int pageNum, Model model,
-			@Param("sortField") String sortField, @Param("sortDir") String sortDir
+			@Param("sortField") String sortField, @Param("sortDir") String sortDir,
+			@Param("keyword") String keyword
 			) {
 		System.out.println("Sort Field: "+ sortField);
 		System.out.println("Sort Order: "+ sortDir);
 		
-		Page<User> page = service.listByPage(pageNum, sortField, sortDir);
+		Page<User> page = service.listByPage(pageNum, sortField, sortDir, keyword);
 		
 		List<User> listUsers = page.getContent();
 		
@@ -60,11 +63,10 @@ public class UserController {
 		model.addAttribute("sortField", sortField);
 		model.addAttribute("sortDir", sortDir);
 		model.addAttribute("reverseSortDir", reverseSortDir);
+		model.addAttribute("keyword", keyword);
 		
 		return "users";
 	}
-	
-	
 	
 	@GetMapping("/users/new")
 	public String newUser(Model model){
@@ -100,7 +102,13 @@ public class UserController {
 			
 		//service.save(user);
 		redirectAttributes.addFlashAttribute("message", "The user has been saved succesfully. ");
-		return "redirect:/users";	
+		
+		return getRedirectURLtoAffectedUser(user);	
+	}
+
+	private String getRedirectURLtoAffectedUser(User user) {
+		String firstPartOfEmail = user.getEmail().split("@")[0];
+		return "redirect:/users/page/1?sortField=id&sortDir=asc&keyword=" + firstPartOfEmail;
 	}
 	
 	@GetMapping("/users/edit/{id}")
@@ -122,6 +130,7 @@ public class UserController {
 		}
 		
 	}
+	
 	@GetMapping("/users/delete/{id}")
 	public String deleteUser(@PathVariable(name= "id") Integer id ,
 			Model model,
@@ -146,6 +155,29 @@ public class UserController {
 		String message = "The user ID " + id + "has been " + status;
 		redirectAttributes.addFlashAttribute("message", message);
 		return "redirect:/users";
+	}
+	
+	@GetMapping("/users/export/csv")
+	public void exportToCSV(HttpServletResponse response) throws IOException {
+		List<User> listUsers= service.listAll();
+		UserCSVExporter exporter = new UserCSVExporter();
+		exporter.export(listUsers, response);		
+	}
+	
+	@GetMapping("/users/export/excel")
+	public void exportToExcel(HttpServletResponse response) throws IOException {
+		List<User> listUsers= service.listAll();
+		
+		UserExcelExporter exporter = new UserExcelExporter();
+		exporter.export(listUsers, response);		
+	}
+	
+	@GetMapping("/users/export/pdf")
+	public void exportToPDF(HttpServletResponse response) throws IOException {
+		List<User> listUsers= service.listAll();
+		
+		UserPdfExporter exporter = new UserPdfExporter();
+		exporter.export(listUsers, response);		
 	}
 	
 }

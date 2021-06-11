@@ -1,8 +1,0 @@
-package com.shopme.common.entity;
-
-import javax.persistence.Entity;
-
-@Entity
-public class Role {
-
-}

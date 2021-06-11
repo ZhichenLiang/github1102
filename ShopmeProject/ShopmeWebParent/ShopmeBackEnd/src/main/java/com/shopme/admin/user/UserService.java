@@ -31,16 +31,22 @@ public class UserService {
 	private PasswordEncoder passwordEncoder;
 	
 	public List<User> listAll(){
+												//Sort.by("firstName").ascending()	
 		return (List<User>) userRepo.findAll();
 	}
 	
-	public Page<User> listByPage(int pageNum, String sortField, String sortDir){
+	public Page<User> listByPage(int pageNum, String sortField, String sortDir, String keyWord){
 		Sort sort = Sort.by(sortField);
 		
 		sort = sortDir.equals("asc") ? sort.ascending() : sort.descending();
 		
 		
 		Pageable pageable = PageRequest.of(pageNum -1 , USERS_PER_PAGE , sort);
+		
+		if (keyWord != null) {
+			return userRepo.findAll(keyWord, pageable);
+		}
+		
 		return userRepo.findAll(pageable);
 	}
 	
