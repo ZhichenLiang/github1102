@@ -41,13 +41,12 @@ public class FileUploadUtil {
 					Files.delete(file);
 					} catch(IOException ex) {
 						LOGGER.error("Could not delete this file: " + file);
-//						System.out.println("Could not delete this file: " + file);
+						System.out.println("Could not delete this file: " + file);
 					}
 				}
 			});
 		} catch(IOException ex2) {
-			LOGGER.error("Could not list directory: " + dirPath);
-//			System.out.println("Could not list directory: " + dirPath);
+			System.out.println("Could not list directory: " + dirPath);
 		}
 	}
 	
