@@ -10237,3 +10237,75 @@ java.lang.InterruptedException
 !ENTRY org.eclipse.lsp4e 4 0 2021-06-17 18:23:42.194
 !MESSAGE [Error]	[tsserver] env: node: No such file or directory
 
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:24.890
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KggIVacw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:24.895
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.KggIVacw
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:24.896
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:24.896
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.KggIVacw => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:32.050
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:32.051
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@5c1b5b8[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=548)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:32.052
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.185
+!MESSAGE Boot LS startup time from start to initialized: 9126ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.343
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vudWqLYrisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.343
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.344
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.345
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.345
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.345
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.vudWqLYr => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.353
+!MESSAGE classpath=147 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.355
+!MESSAGE buffering callback sts4.classpath.vudWqLYr ShopmeBackEnd false 147
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.355
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.359
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.360
+!MESSAGE buffering callback sts4.classpath.vudWqLYr ShopmeCommon false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.360
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.364
+!MESSAGE classpath=134 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.365
+!MESSAGE buffering callback sts4.classpath.vudWqLYr ShopmeFrontEnd false 134
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.366
+!MESSAGE executing callback sts4.classpath.vudWqLYr 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-06-17 18:44:41.940
+!MESSAGE executing callback sts4.classpath.vudWqLYr SUCCESS [done]

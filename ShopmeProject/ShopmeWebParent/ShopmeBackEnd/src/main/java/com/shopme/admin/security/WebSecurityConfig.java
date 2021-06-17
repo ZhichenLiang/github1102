@@ -41,13 +41,15 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 		auth.authenticationProvider(authenticationProvider());
 	}
-
+	
+	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		//http.authorizeRequests().anyRequest().permitAll();  all requests are permited
 		
 		http.authorizeRequests()
 		.antMatchers("/users/**").hasAnyAuthority("Admin")
+		.antMatchers("/categories/**").hasAnyAuthority("Admin", "Editor")
 		.anyRequest().authenticated()
 		.and()
 		.formLogin()
@@ -58,8 +60,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		.and()
 			.rememberMe()
 				.key("AbcDefgHijklmnOpqrs_1234567890")
-				.tokenValiditySeconds(7 * 24 * 60 * 60);
-		
+				.tokenValiditySeconds(7 * 24 * 60 * 60);		
 	}
 
 	@Override
