@@ -1,0 +1,40 @@
+package com.shopme.admin.category;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.shopme.common.entity.Category;
+
+@Service
+public class CategoryService {
+	@Autowired
+	private CategoryRepository repo;
+	
+	public List<Category> listAll(){
+		return (List<Category>) repo.findAll();
+	}
+	
+	public List<Category> listCategoriesUsedInForm(){
+		List<Category> categoriesUsedInForm = new ArrayList<>();
+		Iterable<Category> categoriesInDB = repo.findAll();
+		
+		for(Category category : categories) {
+			if(category.getParent() == null) {
+				System.out.println(category.getName());
+				
+				Set<Category> children = category.getChildren();
+				
+				for(Category subCategory : children) {
+					System.out.println("--" + subCategory.getName());
+					printChildren(subCategory, 1);
+				}
+			}
+		}		
+		
+		return categoriesUsedInForm;
+	}
+}
