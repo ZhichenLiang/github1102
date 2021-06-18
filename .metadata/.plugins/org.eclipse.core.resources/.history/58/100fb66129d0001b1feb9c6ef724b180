@@ -51,7 +51,7 @@
 						class="mb-2"/>
 					
 					<div class="mt-2">		
-					<img id= "thumbnail" alt="Image preview" th:src="@{${category.imagePath}}"
+					<img id= "thumbnail" alt="Image preview" th:src="@{/images/image-thumbnail.png}"
 						class="img-fluid"/>
 					</div>	
 				</div>

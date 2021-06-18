@@ -54,10 +54,7 @@ public class CategoryController {
 			
 			FileUploadUtil.cleanDir(uploadDir);
 			FileUploadUtil.savdFile(uploadDir, fileName, multipartFile);
-		} else {
-			service.save(category);
 		}
-		
 		ra.addFlashAttribute("message", "The category has been saved successfully");
 		return "redirect:/categories";
 	}
