@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CategoryRepositoryTests.testFindByAlias" project="ShopmeBackEnd" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.shopme.admin.category.CategoryRepositoryTests" time="0.412" displayname="CategoryRepositoryTests" uniqueid="[engine:junit-jupiter]/[class:com.shopme.admin.category.CategoryRepositoryTests]">
+    <testcase name="testFindByAlias" classname="com.shopme.admin.category.CategoryRepositoryTests" time="0.412" displayname="testFindByAlias()" uniqueid="[engine:junit-jupiter]/[class:com.shopme.admin.category.CategoryRepositoryTests]/[method:testFindByAlias()]"/>
+  </testsuite>
+</testrun>
