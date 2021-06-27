@@ -2,6 +2,9 @@ package com.shopme.admin.category;
 
 import java.util.List;
 
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
@@ -13,6 +16,9 @@ public interface CategoryRepository extends PagingAndSortingRepository<Category,
 	@Query("SELECT c FROM Category c WHERE c.parent.id is NULL")
 	public List<Category> findRootCategories(Sort sort);
 
+	@Query("SELECT c FROM Category c WHERE c.parent.id is NULL")
+	public Page<Category> findRootCategories(Pageable pageable);
+	
 	public Long countById(Integer id);
 	
 	public Category findByName(String name);
