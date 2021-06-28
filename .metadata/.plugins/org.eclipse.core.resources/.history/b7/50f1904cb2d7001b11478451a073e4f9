@@ -54,8 +54,6 @@ public class CategoryController {
 		model.addAttribute("srotField", "name");
 		model.addAttribute("srotField", sortDir);
 		model.addAttribute("keyword", keyword);
-		model.addAttribute("startCount", startCount);
-		model.addAttribute("endCount", endCount);
 		
 		model.addAttribute("listCategories", listCategories);
 		model.addAttribute("reverseSortDir", reverseSortDir);

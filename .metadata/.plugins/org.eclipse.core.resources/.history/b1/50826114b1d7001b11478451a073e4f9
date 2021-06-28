@@ -22,7 +22,7 @@ import com.shopme.common.entity.Category;
 @Service
 @Transactional
 public class CategoryService {
-	public static final int ROOT_CATEGORIES_PER_PAGE = 4;
+	private static final int ROOT_CATEGORIES_PER_PAGE = 4;
 	@Autowired
 	private CategoryRepository repo;
 	
@@ -51,7 +51,7 @@ public class CategoryService {
 		pageInfo.setTotalElements(pageCategories.getTotalElements());
 		pageInfo.setTotalPages(pageCategories.getTotalPages());
 		
-		if(keyword!= null && !keyword.isEmpty()) {
+		if(keyword!= null || !keyword.isEmpty()) {
 			List<Category> searchResult = pageCategories.getContent();
 			for(Category category : searchResult) {
 				category.setHasChildren(category.getChildren().size() > 0);
