@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;fragments.html&apos; to &apos;templates&apos;&#x0A;- Original project: &apos;ShopmeBackEnd&apos;&#x0A;- Destination element: &apos;templates&apos;&#x0A;- Original element: &apos;fragments.html&apos;" description="Copy file" element1="src/main/resources/templates/fragments.html" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1624377922600" target="/ShopmeBackEnd/src/main/resources/templates" units="0" version="1.0"/>
-</session>

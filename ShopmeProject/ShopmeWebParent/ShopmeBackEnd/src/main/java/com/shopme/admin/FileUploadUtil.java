@@ -14,7 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class FileUploadUtil {
 	private static final Logger LOGGER = LoggerFactory.getLogger(FileUploadUtil.class);
 	
-	public static void savdFile(String uploadDir, String fileName,
+	public static void saveFile(String uploadDir, String fileName,
 			MultipartFile multipartFile) throws IOException {
 		Path uploadPath = Paths.get(uploadDir);
 		

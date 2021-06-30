@@ -6,8 +6,6 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletResponse;
 
-import org.hibernate.tool.hbm2ddl.TableMetadata;
-
 import com.lowagie.text.Document;
 import com.lowagie.text.Font;
 import com.lowagie.text.FontFactory;
@@ -17,12 +15,14 @@ import com.lowagie.text.Phrase;
 import com.lowagie.text.pdf.PdfPCell;
 import com.lowagie.text.pdf.PdfPTable;
 import com.lowagie.text.pdf.PdfWriter;
+import com.shopme.admin.AbstractExporter;
 import com.shopme.common.entity.User;
 
-public class UserPdfExporter extends AbstractExporter{
+public class UserPdfExporter extends AbstractExporter {
 
 	public void export(List<User> listUsers, HttpServletResponse response) throws IOException {
-		super.setResponseHeader(response, "application/pdf", ".pdf");
+		super.setResponseHeader(response, "application/pdf", ".pdf", "users_");
+		
 		Document document = new Document(PageSize.A4);
 		PdfWriter.getInstance(document, response.getOutputStream());
 		
@@ -32,7 +32,7 @@ public class UserPdfExporter extends AbstractExporter{
 		font.setSize(18);
 		font.setColor(Color.BLUE);
 		
-		Paragraph paragraph = new Paragraph("List of Users", font);
+		Paragraph paragraph = new Paragraph("List of User", font);
 		paragraph.setAlignment(Paragraph.ALIGN_CENTER);
 		
 		document.add(paragraph);
@@ -47,7 +47,8 @@ public class UserPdfExporter extends AbstractExporter{
 		
 		document.add(table);
 		
-		document.close();		
+		document.close();
+		
 	}
 
 	private void writeTableData(PdfPTable table, List<User> listUsers) {
@@ -59,7 +60,6 @@ public class UserPdfExporter extends AbstractExporter{
 			table.addCell(user.getRoles().toString());
 			table.addCell(String.valueOf(user.isEnabled()));
 		}
-		
 	}
 
 	private void writeTableHeader(PdfPTable table) {
@@ -68,26 +68,25 @@ public class UserPdfExporter extends AbstractExporter{
 		cell.setPadding(5);
 		
 		Font font = FontFactory.getFont(FontFactory.HELVETICA);
-		font.setColor(Color.WHITE);
+		font.setColor(Color.WHITE);		
 		
-		cell.setPhrase(new Phrase("ID", font));
+		cell.setPhrase(new Phrase("ID", font));		
 		table.addCell(cell);
 		
-		cell.setPhrase(new Phrase("E-mail", font));
+		cell.setPhrase(new Phrase("E-mail", font));		
 		table.addCell(cell);
 		
-		cell.setPhrase(new Phrase("First Name", font));
+		cell.setPhrase(new Phrase("First Name", font));		
 		table.addCell(cell);
 		
-		cell.setPhrase(new Phrase("Last Name", font));
+		cell.setPhrase(new Phrase("Last Name", font));		
+		table.addCell(cell);		
+		
+		cell.setPhrase(new Phrase("Roles ", font));		
 		table.addCell(cell);
 		
-		cell.setPhrase(new Phrase("Roles", font));
-		table.addCell(cell);
-		
-		cell.setPhrase(new Phrase("Enabled", font));
-		table.addCell(cell);
-		
+		cell.setPhrase(new Phrase("Enabled", font));		
+		table.addCell(cell);		
 	}
 
 }

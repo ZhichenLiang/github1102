@@ -2,7 +2,6 @@ package com.shopme.admin.category;
 
 import java.util.List;
 
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
@@ -30,7 +29,5 @@ public interface CategoryRepository extends PagingAndSortingRepository<Category,
 	
 	@Query("UPDATE Category c SET c.enabled = ?2 WHERE c.id = ?1")
 	@Modifying
-	public void updateEnabledStatus(Integer id, boolean enabled);
-	
-	
+	public void updateEnabledStatus(Integer id, boolean enabled);	
 }

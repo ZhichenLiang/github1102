@@ -1,9 +1,6 @@
 package com.shopme.admin.user.export;
 
 import java.io.IOException;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 import javax.servlet.ServletOutputStream;
@@ -17,14 +14,14 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import com.shopme.admin.AbstractExporter;
 import com.shopme.common.entity.User;
 
 public class UserExcelExporter extends AbstractExporter {
-	
 	private XSSFWorkbook workbook;
-	private XSSFSheet sheet;	
+	private XSSFSheet sheet;
 	
-	public UserExcelExporter(){
+	public UserExcelExporter() {
 		workbook = new XSSFWorkbook();
 	}
 	
@@ -44,7 +41,6 @@ public class UserExcelExporter extends AbstractExporter {
 		createCell(row, 3, "Last Name", cellStyle);
 		createCell(row, 4, "Roles", cellStyle);
 		createCell(row, 5, "Enabled", cellStyle);
-			
 		
 	}
 	
@@ -59,12 +55,12 @@ public class UserExcelExporter extends AbstractExporter {
 		} else {
 			cell.setCellValue((String) value);
 		}
-			
-		cell.setCellStyle(style);
+		
+		cell.setCellStyle(style);		
 	}
 	
-	public void export(List<User> listUsers,HttpServletResponse response ) throws IOException {
-		super.setResponseHeader(response, "application/octet-stream", ".xlsx");
+	public void export(List<User> listUsers, HttpServletResponse response) throws IOException {
+		super.setResponseHeader(response, "application/octet-stream", ".xlsx", "users_");
 	
 		writeHeaderLine();
 		writeDataLines(listUsers);
@@ -74,6 +70,7 @@ public class UserExcelExporter extends AbstractExporter {
 		workbook.close();
 		outputStream.close();
 		
+		
 	}
 
 	private void writeDataLines(List<User> listUsers) {
@@ -81,12 +78,11 @@ public class UserExcelExporter extends AbstractExporter {
 		
 		XSSFCellStyle cellStyle = workbook.createCellStyle();
 		XSSFFont font = workbook.createFont();
-		font.setBold(true);
 		font.setFontHeight(14);
 		cellStyle.setFont(font);
 		
 		for (User user : listUsers) {
-			XSSFRow row = sheet.createRow(rowIndex ++);
+			XSSFRow row = sheet.createRow(rowIndex++);
 			int columnIndex = 0;
 			
 			createCell(row, columnIndex++, user.getId(), cellStyle);
@@ -95,6 +91,6 @@ public class UserExcelExporter extends AbstractExporter {
 			createCell(row, columnIndex++, user.getLastName(), cellStyle);
 			createCell(row, columnIndex++, user.getRoles().toString(), cellStyle);
 			createCell(row, columnIndex++, user.isEnabled(), cellStyle);
-		}		
+		}
 	}
 }

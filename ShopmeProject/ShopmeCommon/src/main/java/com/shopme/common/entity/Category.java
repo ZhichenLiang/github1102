@@ -178,7 +178,7 @@ public class Category {
 		this.hasChildren = hasChildren;
 	}
 
-	@Transient
+	@javax.persistence.Transient
 	private boolean hasChildren;
 	
 }

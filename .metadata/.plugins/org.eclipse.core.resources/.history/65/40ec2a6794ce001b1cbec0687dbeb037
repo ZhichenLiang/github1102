@@ -1,9 +1,0 @@
-package com.shopme.admin.user;
-
-import org.springframework.stereotype.Controller;
-
-@Controller
-public class AccountController {
-
-	private UserService service;
-}

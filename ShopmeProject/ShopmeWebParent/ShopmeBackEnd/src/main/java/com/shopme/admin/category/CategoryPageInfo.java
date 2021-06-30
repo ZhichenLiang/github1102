@@ -17,4 +17,5 @@ public class CategoryPageInfo {
 		this.totalElements = totalElements;
 	}
 	
+	
 }
