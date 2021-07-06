@@ -4238,3 +4238,15 @@ java.lang.InterruptedException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 21:46:03.112
 !MESSAGE executing callback sts4.classpath.ZUAvDNpX SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 22:42:43.103
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZUAvDNpX
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 22:42:43.118
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.ZUAvDNpX
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 22:42:43.119
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-05 22:42:43.120
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.ZUAvDNpX => OK
