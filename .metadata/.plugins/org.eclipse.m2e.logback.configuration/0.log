@@ -2570,3 +2570,67 @@
 2021-07-09 17:57:12,867 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-07-09 17:57:12,867 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
 2021-07-09 17:57:32,524 [Worker-71: Launching ProductRepositoryTests.testDeleteProduct] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
+2021-07-09 18:01:28,519 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:01:28,524 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:01:28,536 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-09 18:01:28,944 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 40 resources
+2021-07-09 18:01:28,980 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:01:28,980 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:01:28,982 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:02:02,272 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:02:02,275 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:02:02,282 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-09 18:02:02,295 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 40 resources
+2021-07-09 18:02:02,304 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:02:02,305 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:02:02,305 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:02:27,147 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:02:27,147 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:02:27,151 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-09 18:02:27,216 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 40 resources
+2021-07-09 18:02:27,234 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:02:27,235 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:02:27,235 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:02:48,692 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:02:48,692 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:02:48,701 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-09 18:02:48,709 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 40 resources
+2021-07-09 18:02:48,721 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:02:48,722 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:02:48,722 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:10:05,227 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:10:05,229 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:10:05,230 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-09 18:10:05,230 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-09 18:10:05,233 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:10:05,233 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:10:05,233 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:11:00,053 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:11:00,053 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:11:00,054 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-09 18:11:00,055 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-09 18:11:00,063 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:11:00,063 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:11:00,063 [Worker-76: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:11:09,204 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:11:09,205 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:11:09,206 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-09 18:11:09,206 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-09 18:11:09,225 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:11:09,225 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:11:09,225 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:11:43,317 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:11:43,318 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:11:43,319 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-07-09 18:11:43,320 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-09 18:11:43,324 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:11:43,324 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:11:43,324 [Worker-78: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:15:48,348 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:15:48,350 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:15:48,355 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-07-09 18:15:48,671 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 41 resources
+2021-07-09 18:15:48,690 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-07-09 18:15:48,691 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-07-09 18:15:48,694 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/johnny/Desktop/Shopme/ShopmeProject/ShopmeWebParent/ShopmeBackEnd/src/test/resources
+2021-07-09 18:15:53,320 [Worker-75: Launching ShopmeBackEnd - ShopmeBackEndApplication] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/ShopmeCommon: com.shopme:ShopmeCommon:0.0.1-SNAPSHOT with classifier null to /ShopmeCommon/target/classes
