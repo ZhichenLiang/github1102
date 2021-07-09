@@ -5125,3 +5125,63 @@ java.util.concurrent.TimeoutException
 	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
 	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
 	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:17.002
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:17.014
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@54a0f09d[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=548)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:17.016
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.220
+!MESSAGE Boot LS startup time from start to initialized: 10187ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.626
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.PjTKfNEdisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.628
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.629
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.630
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.631
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.631
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.PjTKfNEd => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.639
+!MESSAGE classpath=147 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.643
+!MESSAGE buffering callback sts4.classpath.PjTKfNEd ShopmeBackEnd false 147
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.645
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.650
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.652
+!MESSAGE buffering callback sts4.classpath.PjTKfNEd ShopmeCommon false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.652
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.658
+!MESSAGE classpath=134 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.661
+!MESSAGE buffering callback sts4.classpath.PjTKfNEd ShopmeFrontEnd false 134
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:27.661
+!MESSAGE executing callback sts4.classpath.PjTKfNEd 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-09 21:59:28.564
+!MESSAGE executing callback sts4.classpath.PjTKfNEd SUCCESS [done]
