@@ -7124,3 +7124,69 @@ Binding(COMMAND+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:32.359
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:32.360
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7a82be85[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=548)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:32.365
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:32.815
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.445
+!MESSAGE Boot LS startup time from start to initialized: 10059ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.664
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.cACtYeQiisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.671
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.675
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.676
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.677
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.678
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.cACtYeQi => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.711
+!MESSAGE classpath=147 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.714
+!MESSAGE buffering callback sts4.classpath.cACtYeQi ShopmeBackEnd false 147
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.715
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.717
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.718
+!MESSAGE buffering callback sts4.classpath.cACtYeQi ShopmeCommon false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.719
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.725
+!MESSAGE classpath=134 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.726
+!MESSAGE buffering callback sts4.classpath.cACtYeQi ShopmeFrontEnd false 134
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:42.727
+!MESSAGE executing callback sts4.classpath.cACtYeQi 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-15 16:48:43.733
+!MESSAGE executing callback sts4.classpath.cACtYeQi SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-07-15 17:20:39.666
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
