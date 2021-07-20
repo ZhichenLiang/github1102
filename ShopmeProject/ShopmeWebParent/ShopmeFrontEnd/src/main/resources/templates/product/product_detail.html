@@ -12,7 +12,7 @@
 
 		<div class="row">
 			<div class="col-sm">
-				<div> 
+				<div>
 					<img id="bigImage" th:src="@{${product.mainImagePath}}" class="img-fluid" index="0" />
 				</div>
 				<div class="row justify-content-center">
@@ -27,7 +27,7 @@
 					</th:block>
 				</div>
 			</div>
-		
+
 			<div class="col-sm">
 				<div>
 					<h2>[[${product.name}]]</h2>
@@ -37,13 +37,19 @@
 				</div>
 				<div>
 					List Price:
-					<span th:if="${product.discountPercent <= 0}">$ [[${product.price}]]</span>
-					<del th:if="${product.discountPercent > 0}"><span>$ [[${product.price}]]</span></del>
+					<span th:if="${product.discountPercent <= 0}">
+						<div th:replace="product/product_fragment :: price_fragment(${product.price})"></div>
+					</span>
+					<del th:if="${product.discountPercent > 0}"><span>
+							<div th:replace="product/product_fragment :: price_fragment(${product.price})"></div>
+						</span></del>
 				</div>
 				<div th:if="${product.discountPercent > 0}">
 					Price:
-					<span style="font-size: larger; color: darkred">$ [[${product.discountPrice}]]</span>
-					([[${product.discountPercent}]] % off)
+					<span style="font-size: larger; color: darkred">
+						<div th:replace="product/product_fragment :: price_fragment(${product.discountPrice})"></div>
+					</span>
+					([[${#numbers.formatDecimal(product.discountPercent, 1, THOUSANDS_POINT_TYPE, DECIMAL_DIGITS, DECIMAL_POINT_TYPE)}]] % off)
 				</div>
 				<div>&nbsp;</div>
 				<div th:utext="${product.shortDescription}"></div>
@@ -96,24 +102,24 @@
 	</div>
 	
 	<script type="text/javascript">
- 	$(document).ready(function() {
- 		bigImage = $("#bigImage");
+		$(document).ready(function () {
+			bigImage = $("#bigImage");
 
- 		$(".image-thumbnail").mouseover(function() {
- 			currentImageSource = $(this).attr("src");
- 			currentImageIndex = $(this).attr("index");
+			$(".image-thumbnail").mouseover(function () {
+				currentImageSource = $(this).attr("src");
+				currentImageIndex = $(this).attr("index");
 
- 			bigImage.attr("src", currentImageSource);
- 			bigImage.attr("index", currentImageIndex);
- 		});
+				bigImage.attr("src", currentImageSource);
+				bigImage.attr("index", currentImageIndex);
+			});
 
- 		bigImage.on("click", function() {
- 			$("#carouselModal").modal("show");
- 			imageIndex = parseInt(bigImage.attr("index"));
- 			$("#carouselExampleIndicators").carousel(imageIndex);
- 		});
- 	});
- </script>
+			bigImage.on("click", function () {
+				$("#carouselModal").modal("show");
+				imageIndex = parseInt(bigImage.attr("index"));
+				$("#carouselExampleIndicators").carousel(imageIndex);
+			});
+		});
+	</script>
 </body>
 
 </html>
