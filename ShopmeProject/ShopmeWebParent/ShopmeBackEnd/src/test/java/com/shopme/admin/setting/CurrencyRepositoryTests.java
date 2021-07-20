@@ -44,6 +44,15 @@ package com.shopme.admin.setting;
 
  		Iterable<Currency> iterable = repo.findAll();
 
- 		assertThat(iterable).size().isEqualTo(12);
+ 		assertThat(iterable).size().isEqualTo(13);
+ 	}
+ 	
+ 	@Test
+ 	public void testListAllOrderByNameAsc() {
+ 		List<Currency> currencies = repo.findAllByOrderByNameAsc();
+
+ 		currencies.forEach(System.out::println);
+
+ 		assertThat(currencies.size()).isGreaterThan(0);
  	}
  }

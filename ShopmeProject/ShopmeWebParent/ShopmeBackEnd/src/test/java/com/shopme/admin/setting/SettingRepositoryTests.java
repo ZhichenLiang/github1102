@@ -2,7 +2,9 @@ package com.shopme.admin.setting;
 
  import static org.assertj.core.api.Assertions.assertThat;
 
- import org.junit.jupiter.api.Test;
+import java.util.List;
+
+import org.junit.jupiter.api.Test;
  import org.springframework.beans.factory.annotation.Autowired;
  import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
  import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.Replace;
@@ -55,7 +57,12 @@ package com.shopme.admin.setting;
 // 		repo.saveAll(List.of(currencyId, symbol, symbolPosition, decimalPointType, 
 // 				decimalDigits, thousandsPointType));
  		
- 		
+ 	}
+	
+ 	@Test
+ 	public void testListSettingsByCategory() {
+ 		List<Setting> settings = repo.findByCategory(SettingCategory.GENERAL);
 
+ 		settings.forEach(System.out::println);
  	}
  }

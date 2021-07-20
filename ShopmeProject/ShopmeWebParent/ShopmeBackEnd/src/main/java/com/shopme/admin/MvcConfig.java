@@ -45,6 +45,8 @@ public class MvcConfig implements WebMvcConfigurer {
 //			.addResourceLocations("file:" + brandLogosPath + "/");		
 		
 		exposeDirectory("../product-images", registry);
+		
+		exposeDirectory("../site-logo", registry);
 	}
 	
 	
@@ -58,5 +60,6 @@ public class MvcConfig implements WebMvcConfigurer {
  		registry.addResourceHandler(logicalPath)
  			.addResourceLocations("file:" + absolutePath + "/");	//	Mac OS 跟 windows系統路徑位置不同 
 	}
+	
 
 }
