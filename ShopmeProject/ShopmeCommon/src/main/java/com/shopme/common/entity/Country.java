@@ -29,7 +29,11 @@ package com.shopme.common.entity;
  	public Country() {
 
  	}
-
+ 	
+ 	public Country(Integer id) {
+ 		this.id = id;
+ 	}
+ 	
  	public Country(Integer id, String name, String code) {
  		this.id = id;
  		this.name = name;
