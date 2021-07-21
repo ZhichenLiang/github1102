@@ -32,4 +32,12 @@ package com.shopme.admin.setting;
  	public void saveAll(Iterable<Setting> settings) {
  		repo.saveAll(settings);
  	}
+ 	
+	public List<Setting> getMailServerSettings() {
+ 		return repo.findByCategory(SettingCategory.MAIL_SERVER);
+ 	}
+
+ 	public List<Setting> getMailTemplateSettings() {
+ 		return repo.findByCategory(SettingCategory.MAIL_TEMPLATES);
+ 	}	
  }
