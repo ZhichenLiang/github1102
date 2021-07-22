@@ -112,14 +112,14 @@ public class UserRepositoryTests {
 	@Test
 	public void testDisableUser() {
 		Integer id = 1;
-		repo.updateUserEnabledStatus(id, false);
+		repo.updateEnabledStatus(id, false);
 			
 	}
 	
 	@Test
 	public void testEnableUser() {
 		Integer id = 24;
-		repo.updateUserEnabledStatus(id, true);
+		repo.updateEnabledStatus(id, true);
 			
 	}
 	

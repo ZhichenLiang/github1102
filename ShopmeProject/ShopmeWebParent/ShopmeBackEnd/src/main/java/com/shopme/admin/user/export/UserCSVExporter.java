@@ -12,7 +12,7 @@ import org.supercsv.prefs.CsvPreference;
 import com.shopme.admin.AbstractExporter;
 import com.shopme.common.entity.User;
 
-public class UserCSVExporter extends AbstractExporter {
+public class UserCsvExporter extends AbstractExporter {
 	
 	public void export(List<User> listUsers, HttpServletResponse response) throws IOException {
 		super.setResponseHeader(response, "text/csv", ".csv", "users_");
