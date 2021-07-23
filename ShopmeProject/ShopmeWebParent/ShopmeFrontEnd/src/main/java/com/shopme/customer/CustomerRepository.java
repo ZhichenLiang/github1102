@@ -4,7 +4,8 @@ package com.shopme.customer;
  import org.springframework.data.jpa.repository.Query;
  import org.springframework.data.repository.CrudRepository;
 
- import com.shopme.common.entity.Customer;
+import com.shopme.common.entity.AuthenticationType;
+import com.shopme.common.entity.Customer;
 
  public interface CustomerRepository extends CrudRepository<Customer, Integer> {
 
@@ -15,6 +16,10 @@ package com.shopme.customer;
  	public Customer findByVerificationCode(String code);
 
  	@Query("UPDATE Customer c SET c.enabled = true, c.verificationCode = null WHERE c.id = ?1")
+ 	public void enable(Integer id);
+
+ 	@Query("UPDATE Customer c SET c.authenticationType = ?2 WHERE c.id = ?1")
  	@Modifying
- 	public void enable(Integer id);	
+ 	public void updateAuthenticationType(Integer customerId, AuthenticationType type);
+ 	
  }
