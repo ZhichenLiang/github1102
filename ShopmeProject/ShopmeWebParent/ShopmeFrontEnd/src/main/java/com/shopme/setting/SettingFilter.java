@@ -37,7 +37,7 @@ package com.shopme.setting;
  		List<Setting> generalSettings = service.getGeneralSettings();
 
  		generalSettings.forEach(setting -> {
- 			System.out.println(setting);
+ 		
  			request.setAttribute(setting.getKey(), setting.getValue());
  		});
 
