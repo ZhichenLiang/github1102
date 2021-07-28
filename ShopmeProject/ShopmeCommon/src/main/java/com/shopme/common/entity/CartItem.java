@@ -7,6 +7,7 @@ package com.shopme.common.entity;
  import javax.persistence.JoinColumn;
  import javax.persistence.ManyToOne;
  import javax.persistence.Table;
+import javax.persistence.Transient;
 
  @Entity
  @Table(name = "cart_items")
@@ -65,6 +66,10 @@ package com.shopme.common.entity;
  		return "CartItem [id=" + id + ", customer=" + customer.getFullName() + ", product=" + product.getShortName() + ", quantity=" + quantity
  				+ "]";
  	}
-
+ 	
+ 	@Transient
+ 	public float getSubtotal() {
+ 		return product.getDiscountPrice() * quantity;
+ 	}
 
  }

@@ -1,6 +1,8 @@
 package com.shopme.shoppingcart;
 
- import org.springframework.beans.factory.annotation.Autowired;
+ import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
  import org.springframework.stereotype.Service;
 
  import com.shopme.common.entity.CartItem;
@@ -39,4 +41,8 @@ package com.shopme.shoppingcart;
 
  		return updatedQuantity;
  	}
+
+	public List<CartItem> listCartItems(Customer customer) {
+		return cartRepo.findByCustomer(customer);
+	}
  }
