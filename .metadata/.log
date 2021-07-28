@@ -4214,3 +4214,70 @@ Binding(COMMAND+SHIFT+C,
 !ENTRY org.eclipse.lsp4e 4 0 2021-07-28 15:15:47.947
 !MESSAGE [Error]	[tsserver] env: node: No such file or directory
 
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:07.881
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:07.888
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@8d202c1[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=548)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:07.889
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.634
+!MESSAGE Boot LS startup time from start to initialized: 8741ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.770
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KhWtCkDZisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.771
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.772
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.773
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.773
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.774
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.KhWtCkDZ => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.781
+!MESSAGE classpath=147 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.784
+!MESSAGE buffering callback sts4.classpath.KhWtCkDZ ShopmeFrontEnd false 147
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.785
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.791
+!MESSAGE classpath=149 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.793
+!MESSAGE buffering callback sts4.classpath.KhWtCkDZ ShopmeBackEnd false 149
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.793
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.796
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.797
+!MESSAGE buffering callback sts4.classpath.KhWtCkDZ ShopmeCommon false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:16.797
+!MESSAGE executing callback sts4.classpath.KhWtCkDZ 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-07-28 16:14:17.468
+!MESSAGE executing callback sts4.classpath.KhWtCkDZ SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 1 0 2021-07-28 16:27:27.077
+!MESSAGE [Info]	ESLint server running in node v14.15.4
+
+!ENTRY org.eclipse.lsp4e 4 0 2021-07-28 16:27:28.620
+!MESSAGE [Error]	[tsserver] env: node: No such file or directory
+
