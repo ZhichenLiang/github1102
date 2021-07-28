@@ -72,6 +72,10 @@ package com.shopme.common.entity;
  	
  	public Customer() {
  	}
+	
+ 	public Customer(Integer id) {
+ 		this.id = id;
+ 	}
 
  	public Integer getId() {
  		return id;
