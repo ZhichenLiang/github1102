@@ -97,4 +97,13 @@ import com.shopme.common.entity.Customer;
 
  		return "redirect:/address_book";
  	}
+ 	
+ 	@GetMapping("/address_book/default/{id}")
+ 	public String setDefaultAddress(@PathVariable("id") Integer addressId,
+ 			HttpServletRequest request) {
+ 		Customer customer = getAuthenticatedCustomer(request);
+ 		addressService.setDefaultAddress(addressId, customer.getId());
+
+ 		return "redirect:/address_book"; 
+ 	}
  }

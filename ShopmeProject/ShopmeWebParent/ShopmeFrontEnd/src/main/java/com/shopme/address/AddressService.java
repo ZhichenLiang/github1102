@@ -32,4 +32,12 @@ import org.springframework.beans.factory.annotation.Autowired;
  		repo.deleteByIdAndCustomer(addressId, customerId);
  	}
 
+ 	public void setDefaultAddress(Integer defaultAddressId, Integer customerId) {
+ 		if (defaultAddressId > 0) {
+ 			repo.setDefaultAddress(defaultAddressId);
+ 		}
+
+ 		repo.setNonDefaultForOthers(defaultAddressId, customerId);
+ 	}
+
  }
