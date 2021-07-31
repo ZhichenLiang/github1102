@@ -6,7 +6,6 @@ import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import java.util.Optional;
 import com.shopme.common.entity.CartItem;
 import com.shopme.common.entity.Customer;
 import com.shopme.common.entity.Product;

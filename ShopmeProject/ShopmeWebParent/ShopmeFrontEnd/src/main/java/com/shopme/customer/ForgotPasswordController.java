@@ -7,7 +7,6 @@ package com.shopme.customer;
  import javax.servlet.http.HttpServletRequest;
 
  import org.springframework.beans.factory.annotation.Autowired;
- import org.springframework.data.repository.query.Param;
  import org.springframework.mail.javamail.JavaMailSenderImpl;
  import org.springframework.mail.javamail.MimeMessageHelper;
  import org.springframework.stereotype.Controller;
@@ -78,7 +77,7 @@ package com.shopme.customer;
  	}
 
  	@GetMapping("/reset_password")
- 	public String showResetForm(@Param("token") String token, Model model) {
+ 	public String showResetForm(String token, Model model) {
  		Customer customer = customerService.getByResetPasswordToken(token);
  		if (customer != null) {
  			model.addAttribute("token", token);
