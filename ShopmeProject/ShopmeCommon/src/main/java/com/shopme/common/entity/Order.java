@@ -16,6 +16,7 @@ package com.shopme.common.entity;
  import javax.persistence.ManyToOne;
  import javax.persistence.OneToMany;
  import javax.persistence.Table;
+import javax.persistence.Transient;
 
  @Entity
  @Table(name = "orders")
@@ -269,5 +270,13 @@ package com.shopme.common.entity;
  				+ ", customer=" + customer.getFullName() + "]";
  	}
 
+ 	@Transient
+ 	public String getDestination() {
+ 		String destination =  city + ", ";
+ 		if (state != null && !state.isEmpty()) destination += state + ", ";
+ 		destination += country;
+
+ 		return destination;
+ 	}
 
  }

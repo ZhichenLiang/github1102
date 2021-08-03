@@ -67,10 +67,14 @@ package com.shopme.admin.order;
 
  	@Test
  	public void testCreateNewOrderWithMultipleProducts() {
- 		Customer customer = entityManager.find(Customer.class, 2);
- 		Product product1 = entityManager.find(Product.class, 3);
- 		Product product2 = entityManager.find(Product.class, 5);
-
+// 		Customer customer = entityManager.find(Customer.class, 2);
+// 		Product product1 = entityManager.find(Product.class, 3);
+// 		Product product2 = entityManager.find(Product.class, 5);
+ 		
+ 		Customer customer = entityManager.find(Customer.class, 10);
+ 		Product product1 = entityManager.find(Product.class, 20);
+ 		Product product2 = entityManager.find(Product.class, 40);
+ 		
  		Order mainOrder = new Order();
  		mainOrder.setOrderTime(new Date());
  		mainOrder.setCustomer(customer);
@@ -104,8 +108,11 @@ package com.shopme.admin.order;
  		mainOrder.setSubtotal(subtotal);
  		mainOrder.setTotal(subtotal + 30);
 
- 		mainOrder.setPaymentMethod(PaymentMethod.COD);
- 		mainOrder.setStatus(OrderStatus.PROCESSING);
+// 		mainOrder.setPaymentMethod(PaymentMethod.COD);
+// 		mainOrder.setStatus(OrderStatus.PROCESSING);	
+ 		mainOrder.setPaymentMethod(PaymentMethod.CREDIT_CARD);
+ 		mainOrder.setStatus(OrderStatus.PACKAGED);
+ 		
  		mainOrder.setDeliverDate(new Date());
  		mainOrder.setDeliverDays(3);
 

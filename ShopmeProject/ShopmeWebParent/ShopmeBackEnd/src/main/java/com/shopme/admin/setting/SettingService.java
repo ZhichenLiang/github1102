@@ -39,5 +39,9 @@ package com.shopme.admin.setting;
 
  	public List<Setting> getMailTemplateSettings() {
  		return repo.findByCategory(SettingCategory.MAIL_TEMPLATES);
+ 	}
+
+ 	public List<Setting> getCurrencySettings() {
+ 		return repo.findByCategory(SettingCategory.CURRENCY);
  	}	
  }
