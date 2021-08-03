@@ -125,3 +125,87 @@ Binding(COMMAND+SHIFT+C,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:32:14.268
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RHXFYoXR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:32:14.274
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.RHXFYoXR
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:32:14.275
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:32:14.275
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RHXFYoXR => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:38.602
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:38.616
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@8d202c1[org.springframework.tooling.boot.ls:1.25.0.202103111026(id=548)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:38.619
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.679
+!MESSAGE Boot LS startup time from start to initialized: 9048ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.834
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.unejSdjSisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.837
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.837
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.838
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.838
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.839
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.unejSdjS => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.846
+!MESSAGE classpath=149 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.848
+!MESSAGE buffering callback sts4.classpath.unejSdjS ShopmeBackEnd false 149
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.849
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.851
+!MESSAGE classpath=67 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.852
+!MESSAGE buffering callback sts4.classpath.unejSdjS ShopmeCommon false 67
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.853
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.857
+!MESSAGE classpath=147 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.859
+!MESSAGE buffering callback sts4.classpath.unejSdjS ShopmeFrontEnd false 147
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:47.859
+!MESSAGE executing callback sts4.classpath.unejSdjS 3 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 00:44:48.430
+!MESSAGE executing callback sts4.classpath.unejSdjS SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 01:22:06.432
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.unejSdjS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 01:22:06.435
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.unejSdjS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 01:22:06.435
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-04 01:22:06.436
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.unejSdjS => OK
