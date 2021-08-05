@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  import org.springframework.stereotype.Service;
 
  import com.shopme.admin.paging.PagingAndSortingHelper;
- import com.shopme.common.entity.Order;
+import com.shopme.common.entity.order.Order;
 
  @Service
  public class OrderService {

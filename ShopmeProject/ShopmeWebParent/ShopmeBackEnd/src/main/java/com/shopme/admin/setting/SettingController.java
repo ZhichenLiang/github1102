@@ -18,7 +18,7 @@ package com.shopme.admin.setting;
 
  import com.shopme.admin.FileUploadUtil;
  import com.shopme.common.entity.Currency;
- import com.shopme.common.entity.Setting;
+import com.shopme.common.entity.setting.Setting;
 
  @Controller
  public class SettingController {

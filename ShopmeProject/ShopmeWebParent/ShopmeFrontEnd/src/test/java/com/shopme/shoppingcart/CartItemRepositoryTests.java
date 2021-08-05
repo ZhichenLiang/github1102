@@ -14,7 +14,7 @@ package com.shopme.shoppingcart;
 
  import com.shopme.common.entity.CartItem;
  import com.shopme.common.entity.Customer;
- import com.shopme.common.entity.Product;
+import com.shopme.common.entity.product.Product;
 
  @DataJpaTest
  @AutoConfigureTestDatabase(replace = Replace.NONE)
