@@ -4674,3 +4674,15 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-05 16:42:32.011
 !MESSAGE executing callback sts4.classpath.VofBxixL SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-05 22:46:02.556
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VofBxixL
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-05 22:46:02.590
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.VofBxixL
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-05 22:46:02.591
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-08-05 22:46:02.592
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.VofBxixL => OK
