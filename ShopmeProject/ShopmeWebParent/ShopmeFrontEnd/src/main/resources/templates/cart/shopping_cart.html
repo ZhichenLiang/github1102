@@ -35,19 +35,18 @@
 									<b>[[${product.shortName}]]</b>
 								</a>
 							</div>
-							<div
-								th:replace="cart/quantity_control :: quantity_control(${item.quantity}, ${product.id})">
+								<div th:replace="cart/quantity_control :: quantity_control(${item.quantity}, ${product.id})">
 							</div>
-
+							
 							<div>
 								<span>X&nbsp;</span>
 								<div th:replace="product/product_fragment :: product_price"></div>
 							</div>
 							<div>
 								<span>=&nbsp;</span>
-								<span th:if="${CURRENCY_SYMBOL_POSITION == 'Before price'}"
-									th:remove="tag">[[${CURRENCY_SYMBOL}]]</span><span
-									th:id="'subtotal' + ${product.id}" class="h4 subtotal">[[${#numbers.formatDecimal(item.subtotal, 1, THOUSANDS_POINT_TYPE, DECIMAL_DIGITS, DECIMAL_POINT_TYPE)}]]</span><span th:if="${CURRENCY_SYMBOL_POSITION == 'After price'}" th:remove="tag">[[${CURRENCY_SYMBOL}]]</span>						
+								<span th:if="${CURRENCY_SYMBOL_POSITION == 'Before price'}" th:remove="tag">[[${CURRENCY_SYMBOL}]]</span>
+								<span th:id="'subtotal' + ${product.id}" class="h4 subtotal">[[${#numbers.formatDecimal(item.subtotal, 1, THOUSANDS_POINT_TYPE, DECIMAL_DIGITS, DECIMAL_POINT_TYPE)}]]</span>
+								<span th:if="${CURRENCY_SYMBOL_POSITION == 'After price'}" th:remove="tag">[[${CURRENCY_SYMBOL}]]</span>						
  					</div>	
  									
  				</div>
@@ -65,7 +64,9 @@
  			</div>
  			<div class="mt-2">
  				<div th:if="${shippingSupported}">
- 				<button class="btn btn-danger p-3 mt-2">Check Out</button>
+ 				<form th:action="@{/checkout}">
+ 					<button type="submit" class="btn btn-danger p-3 mt-2">Check Out</button>
+ 				</form>
  				</div>
 
  				<div th:unless="${shippingSupported}">
