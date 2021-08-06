@@ -58,7 +58,7 @@
 					<div th:replace="settings/mail_templates/mail_templates :: content"></div>
 				</div>
 				<div class="tab-pane p-3" id="payment" role="tabpanel">
-					<h2>Payment</h2>
+					<div th:replace="settings/payment :: content"></div>
 				</div>
 			</div>
 		</div>
@@ -80,10 +80,11 @@
 		contextPath = "[[@{/}]]";
 		var csrfHeaderName = "[[${_csrf.headerName}]]";
 		var csrfValue = "[[${_csrf.token}]]";
-		
-		$(document).ready(function() {
- 		$("#customerVerificationContent").richText();
- 	});
+
+		$(document).ready(function () {
+			$("#customerVerificationContent").richText();
+			$("#orderConfirmationContent").richText();
+		});
 
 	</script>
 	<script th:src="@{/js/common_form.js}"></script>
