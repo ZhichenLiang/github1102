@@ -22,4 +22,8 @@ import com.shopme.common.entity.product.Product;
  	@Modifying
  	@Query("DELETE FROM CartItem c WHERE c.customer.id = ?1 AND c.product.id = ?2")
  	public void deleteByCustomerAndProduct(Integer customerId, Integer productId);
+ 	
+ 	@Modifying
+ 	@Query("DELETE CartItem c WHERE c.customer.id = ?1")
+ 	public void deleteByCustomer(Integer customerId);
  }

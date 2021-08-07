@@ -1,29 +1,33 @@
 <!DOCTYPE html>
- <html xmlns:th="http://www.thymeleaf.org">
- <head th:replace="fragments :: page_head('Shopping Cart', 'none')" />
- <body>
- <div class="container-fluid">
- 	<div th:replace="navigation :: header_menu"></div>
- 	<div th:replace="navigation :: search_nav"></div>
+<html xmlns:th="http://www.thymeleaf.org">
 
- 	<div class="text-center">
- 		<h2>Checkout</h2>
- 	</div>
+<head th:replace="fragments :: page_head('Shopping Cart', 'none')" />
 
- 	<div class="row m-1">
- 		<div class="col-sm-8">
- 			<div class="card">
- 				<div class="card-header"><h5>Shipping information</h5></div>
- 				<div class="card-body">
- 					<p>
- 						<b>Ship to:</b>&nbsp; [[${shippingAddress}]]
- 						<a th:href="@{/address_book(redirect=checkout)}">[Ship to another address]</a>
- 					</p>
- 					<p>
- 						<b>Days to deliver: </b>[[${checkoutInfo.deliverDays}]] day(s)
- 					</p>
- 					<p>
- 						<b>Expected deliver date: </b>[[${#dates.format(checkoutInfo.deliverDate, 'E, dd MMM yyyy')}]]
+<body>
+	<div class="container-fluid">
+		<div th:replace="navigation :: header_menu"></div>
+		<div th:replace="navigation :: search_nav"></div>
+
+		<div class="text-center">
+			<h2>Checkout</h2>
+		</div>
+
+		<div class="row m-1">
+			<div class="col-sm-8">
+				<div class="card">
+					<div class="card-header">
+						<h5>Shipping information</h5>
+					</div>
+					<div class="card-body">
+						<p>
+							<b>Ship to:</b>&nbsp; [[${shippingAddress}]]
+							<a th:href="@{/address_book(redirect=checkout)}">[Ship to another address]</a>
+						</p>
+						<p>
+							<b>Days to deliver: </b>[[${checkoutInfo.deliverDays}]] day(s)
+						</p>
+						<p>
+							<b>Expected deliver date: </b>[[${#dates.format(checkoutInfo.deliverDate, 'E, dd MMM yyyy')}]]
  					</p>
  				</div>
  			</div>		
@@ -32,11 +36,13 @@
  				<div class="card-header"><h5>Payment Method</h5></div>
  				<div class="card-body">
  					<div th:if="${checkoutInfo.codSupported}">
+ 					<form th:action="@{/place_order}" method="post">
  						<p>
- 							<input type="radio" /> Cash on Delivery (COD)
+ 							<input type="radio" name="paymentMethod" id="radioCOD" value="COD" /> Cash on Delivery (COD)
  							&nbsp;
- 							<button class="btn btn-primary">Place Order with COD</button>
+ 							<button class="btn btn-primary d-none" type="submit" id="buttonSubmit">Place Order with COD</button>
  						</p>
+ 						</form>
  					</div>
  				</div>			
  			</div>
@@ -87,6 +93,18 @@
  	</div>
 
  	<div th:replace="navigation :: footer_menu"></div>
- </div>
+ </div> 
+ <script type="text/javascript">
+	contextPath = "[[@{/}]]";
+	var csrfHeaderName = "[[${_csrf.headerName}]]";
+	var csrfValue = "[[${_csrf.token}]]";
+
+	$(document).ready(function () {
+		$("#radioCOD").on("click", function () {
+			$("#buttonSubmit").removeClass("d-none");
+		});
+	});
+
+</script>
  </body>
  </html>
