@@ -15,9 +15,9 @@
 				</h2>
 			</div>
 			<div>
-				<a th:unless="${param.redirect}" th:href="@{/address_book/new}" class="h4">Add New Address</a>
+				<a th:unless="${param.redirect}" th:href="@{/address_book/new}" class="h4"> Add New Address</a>
 				<a th:if="${param.redirect != null && param.redirect[0] == 'checkout'}"
-					th:href="@{/address_book/new(redirect=checkout)}" class="h4">Add New Address</a>
+					th:href="@{/address_book/new(redirect=checkout)}" class="h4"> Add New Address</a>
 			</div>
 		</div>
 
