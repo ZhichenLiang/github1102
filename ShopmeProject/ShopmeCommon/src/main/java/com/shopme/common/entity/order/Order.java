@@ -6,6 +6,9 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -55,8 +58,8 @@ public class Order extends AbstractAddress {
 
 	@OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
 	@OrderBy("updatedTime ASC")
- 	private List<OrderTrack> orderTracks = new ArrayList<>();
-	
+	private List<OrderTrack> orderTracks = new ArrayList<>();
+
 	public String getCountry() {
 		return country;
 	}
@@ -189,47 +192,58 @@ public class Order extends AbstractAddress {
 		return destination;
 	}
 
- 	public void copyShippingAddress(Address address) {
- 		setFirstName(address.getFirstName());
- 		setLastName(address.getLastName());
- 		setPhoneNumber(address.getPhoneNumber());
- 		setAddressLine1(address.getAddressLine1());
- 		setAddressLine2(address.getAddressLine2());
- 		setCity(address.getCity());
- 		setCountry(address.getCountry().getName());
- 		setPostalCode(address.getPostalCode());
- 		setState(address.getState());			
- 	}
+	public void copyShippingAddress(Address address) {
+		setFirstName(address.getFirstName());
+		setLastName(address.getLastName());
+		setPhoneNumber(address.getPhoneNumber());
+		setAddressLine1(address.getAddressLine1());
+		setAddressLine2(address.getAddressLine2());
+		setCity(address.getCity());
+		setCountry(address.getCountry().getName());
+		setPostalCode(address.getPostalCode());
+		setState(address.getState());
+	}
 
+	@Transient
+	public String getShippingAddress() {
+		String address = firstName;
 
- 	@Transient
- 	public String getShippingAddress() {
- 		String address = firstName;
+		if (lastName != null && !lastName.isEmpty())
+			address += " " + lastName;
 
- 		if (lastName != null && !lastName.isEmpty()) address += " " + lastName;
+		if (!addressLine1.isEmpty())
+			address += ", " + addressLine1;
 
- 		if (!addressLine1.isEmpty()) address += ", " + addressLine1;
+		if (addressLine2 != null && !addressLine2.isEmpty())
+			address += ", " + addressLine2;
 
- 		if (addressLine2 != null && !addressLine2.isEmpty()) address += ", " + addressLine2;
+		if (!city.isEmpty())
+			address += ", " + city;
 
- 		if (!city.isEmpty()) address += ", " + city;
+		if (state != null && !state.isEmpty())
+			address += ", " + state;
 
- 		if (state != null && !state.isEmpty()) address += ", " + state;
+		address += ", " + country;
 
- 		address += ", " + country;
+		if (!postalCode.isEmpty())
+			address += ". Postal Code: " + postalCode;
+		if (!phoneNumber.isEmpty())
+			address += ". Phone Number: " + phoneNumber;
 
- 		if (!postalCode.isEmpty()) address += ". Postal Code: " + postalCode;
- 		if (!phoneNumber.isEmpty()) address += ". Phone Number: " + phoneNumber;
+		return address;
+	}
 
- 		return address;
- 	}	
- 	
+	public List<OrderTrack> getOrderTracks() {
+		return orderTracks;
+	}
 
- 	public List<OrderTrack> getOrderTracks() {
- 		return orderTracks;
- 	}
+	public void setOrderTracks(List<OrderTrack> orderTracks) {
+		this.orderTracks = orderTracks;
+	}
 
- 	public void setOrderTracks(List<OrderTrack> orderTracks) {
- 		this.orderTracks = orderTracks;
- 	}
+	@Transient
+	public String getDeliverDateOnForm() {
+		DateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd");
+		return dateFormatter.format(this.deliverDate);
+	}
 }
