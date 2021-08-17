@@ -15,7 +15,6 @@ INDEX VERSION 1.131+/Users/johnny/Desktop/Shopme/.metadata/.plugins/org.eclipse.
 2859404504.index
 1037105066.index
 2032458499.index
-4194637427.index
 1746872172.index
 1607328454.index
 23702245.index
