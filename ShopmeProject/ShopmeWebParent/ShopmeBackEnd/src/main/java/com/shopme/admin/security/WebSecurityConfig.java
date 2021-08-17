@@ -42,10 +42,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests().antMatchers("/users/**").hasAuthority("Admin")
-				
+				.antMatchers("/states/list_by_country/**").hasAnyAuthority("Admin", "Salesperson")
 				.antMatchers("/users/**", "/settings/**", "/countries/**", "/states/**").hasAuthority("Admin")
 
 				.antMatchers("/products/new", "/products/delete/**").hasAnyAuthority("Admin", "Editor")
+				
 
 				.antMatchers("/products/edit/**", "/products/save", "/products/check_unique")
 				.hasAnyAuthority("Admin", "Editor", "Salesperson")
@@ -55,10 +56,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 				.antMatchers("/products/**").hasAnyAuthority("Admin", "Editor")
 				
+				.antMatchers("/orders", "/orders/", "/orders/page/**", "/orders/detail/**").hasAnyAuthority("Admin", "Salesperson", "Shipper")
+				
 				.antMatchers("/customers/**", "/orders/**", "/get_shipping_cost").hasAnyAuthority("Admin", "Salesperson")
 				
-				.anyRequest().authenticated().and().formLogin().loginPage("/login").usernameParameter("email")
-				.permitAll().and().logout().permitAll().and().rememberMe().key("AbcDefgHijKlmnOpqrs_1234567890")
+				.antMatchers("/orders_shipper/update/**").hasAuthority("Shipper")
+				
+				.anyRequest().authenticated()
+				.and()
+				.formLogin().loginPage("/login").usernameParameter("email")
+				.permitAll()
+				.and()
+				.logout()
+				.permitAll().and().rememberMe().key("AbcDefgHijKlmnOpqrs_1234567890")
 				.tokenValiditySeconds(7 * 24 * 60 * 60);
 		;
 		http.headers().frameOptions().sameOrigin();
