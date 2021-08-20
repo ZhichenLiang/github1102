@@ -52,6 +52,13 @@ package com.shopme.common.entity.order;
 	 		}		
 	 	}, 
 
+	 	RETURN_REQUESTED {
+	 		@Override
+	 		public String defaultDescription() {
+	 			return "Customer sent request to return purchase";
+	 		}		
+	 	},
+	 	
 	 	RETURNED {
 	 		@Override
 	 		public String defaultDescription() {
